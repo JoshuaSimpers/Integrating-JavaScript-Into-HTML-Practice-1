@@ -22,10 +22,20 @@
 
             function capitalize(text)
             {
-                console.log(text.substring(0,1).toUpperCase() + text.substring(1).toLowerCase());
+                text = String(text);
+                return text.substring(0,1).toUpperCase() + text.substring(1).toLowerCase();
             }
 
             console.log(capitalize("HeLlO"));
+
+            function lastLetter(letters)
+            {
+                letters = String(letters);
+                return letters.substring(letters.length - 1);
+            }
+
+            console.log(lastLetter("Frog"));
+
         </script>
     </body>
 </html>
